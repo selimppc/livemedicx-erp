@@ -55,13 +55,15 @@ $this->menu=array(
 	
 		<div id="report_main_div"> 
 			<div id="report_button">
-				<?php echo CHtml::link('Consolidated Trial Balance',array('sareport/trialBlanceAll')); ?>
+				<?php //echo CHtml::link('Consolidated Trial Balance',array('sareport/trialBlanceAll')); ?>
+				<?php echo CHtml::link('Consolidated Trial Balance',array('reporttools/trialBlanceAll')); ?>
 			</div>	
 		</div>
 		
 		<div id="report_main_div"> 
 			<div id="report_button">
-				<?php echo CHtml::link('Trial Balance for ALL',array('sareport/TrialBlance')); ?>
+				<?php //echo CHtml::link('Trial Balance for ALL',array('sareport/TrialBlance')); ?>
+				<?php echo CHtml::link('Trial Balance for ALL',array('reporttools/TrialBlance')); ?>
 			</div>
 		</div>
 
@@ -80,12 +82,14 @@ $this->menu=array(
 	<div style="width: 32%; float: left; margin-right: 2%;">
 		<div id="report_main_div"> 
 			<div id="report_button">
-				<?php echo CHtml::link('Balance Sheet',array('sareport/balanceSheet')); ?>
+				<?php //echo CHtml::link('Balance Sheet',array('sareport/balanceSheet')); ?>
+				<?php echo CHtml::link('Balance Sheet',array('reporttools/balanceSheet')); ?>
 			</div>
 		</div>
 		<div id="report_main_div"> 
 			<div id="report_button">
-				<?php echo CHtml::link('Profit & Loss',array('sareport/pnl')); ?>
+				<?php //echo CHtml::link('Profit & Loss',array('sareport/pnl')); ?>
+				<?php echo CHtml::link('Profit & Loss',array('reporttools/pnl')); ?>
 			</div>
 		</div>
 		<div id="report_main_div">

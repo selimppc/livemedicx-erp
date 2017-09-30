@@ -57,7 +57,8 @@ $this->menu=array(
 
 	<div id="report_main_div"> 
 		<div id="report_button">
-			<?php echo CHtml::link('Customer Ledger Report',array('sareport/customerLedgerSales')); ?>
+			<?php //echo CHtml::link('Customer Ledger Report',array('sareport/customerLedgerSales')); ?>
+			<?php echo CHtml::link('Customer Ledger Report',array('reporttools/customerLedgerSales')); ?>
 		</div>	
 	</div>
    

@@ -5,7 +5,6 @@ class JasperReport extends CComponent {
     const FORMAT_HTML = 'html';
     const FORMAT_PDF  = 'pdf';
     const FORMAT_XLS  = 'xls';
-	const FORMAT_CSV  = 'csv';
 
 
     const REPORT_EXEC = 'reportExecutionRequest';
@@ -14,8 +13,9 @@ class JasperReport extends CComponent {
     /**
     * @var string La url base del servidor jasper
     */
-    protected $baseUrl = 'http://37.230.100.79:8080/jasperserver/';
+    protected $baseUrl = 'http://localhost:8080/jasperserver/';
 	//protected $baseUrl = 'http://37.230.100.79:8080/jasperserver/';
+	//protected $baseUrl = 'http://45.33.43.28:8080/jasperserver/';
 
     /**
     * @var string Uri para logearse en el servidor jasper
@@ -124,7 +124,6 @@ class JasperReport extends CComponent {
                 case 'toHTML': $format = self::FORMAT_HTML; break;               
                 case 'toPDF':  $format = self::FORMAT_PDF;  break;                
                 case 'toXLS':  $format = self::FORMAT_XLS;  break;
-				case 'toCSV':  $format = self::FORMAT_CSV;  break;
             }
 
             //Primero debe exportar si hay parametros nuevos o el formato cambio al original
@@ -241,7 +240,6 @@ class JasperReport extends CComponent {
             self::FORMAT_HTML => 'text/html',
             self::FORMAT_PDF  => 'application/pdf',
             self::FORMAT_XLS  => 'application/vnd.ms-excel',
-			self::FORMAT_CSV  => 'application/vnd.ms-CSV',
         );
 
         return $cntTyp[$format];
@@ -444,10 +442,6 @@ class JasperReport extends CComponent {
         $cnt = $this->reportOutput(self::FORMAT_XLS, $pages);
         return $this->output($cnt, $this->cntTyp(self::FORMAT_XLS));
     }
-	 public function reportToCSV ($pages = null, $download = false){
-        $cnt = $this->reportOutput(self::FORMAT_CSV, $pages);
-        return $this->output($cnt, $this->cntTyp(self::FORMAT_CSV));
-    }
 
     /**
     * Genera un reporte de forma sincrona y no genera el id del reporte, formatos soportados: html, pdf, xls, rtf, csv, xml, jrprint
@@ -467,5 +461,4 @@ class JasperReport extends CComponent {
         return $this->output($cnt, $this->cntTyp($this->format), $download);
 
     }
-	
 }
