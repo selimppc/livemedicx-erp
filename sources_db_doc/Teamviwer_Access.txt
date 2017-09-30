@@ -1,0 +1,97 @@
+The following passwords are new (only the people in cc of this email have received the passwords in HE):
+
+GLIS:
+====
+	Team-viewer: 190.305.116
+	Team-viewer password: HEGlis1
+	Computer login: AdminGLIS
+	Computer password: HEGlis1
+
+	ERP login: Admin
+	ERP password: HEadmin1
+
+HE SI Rwanda:
+============
+	Team-viewer: 197.586.950
+	Team-viewer password: HERwanda1
+	Computer login: AdminHE
+	Computer password: HERwanda1
+
+	ERP login: Admin
+	ERP password: HEadmin1
+
+HE SI DRC:
+=========
+	Team-viewer: 197.597.856
+	Team-viewer password: HEDrc1
+	Computer login: AdminDRC
+	Computer password: HEDrc1
+
+	ERP login: Admin
+	ERP password: HEadmin1
+
+HE SI Burundi:
+=============
+	Team-viewer: 197.585.753
+	Team-viewer password: HEBurundi1
+	Computer login: AdminBurundi
+	Computer password: HEBurundi1
+
+	ERP login: Admin
+	ERP password: HEadmin1
+
+Uganda:
+======
+	Team-viewer: 340.517.366
+	Team-viewer password: HEUganda1
+	Computer login: AdminUganda
+	Computer password: HEUganda1
+
+	ERP login: Admin
+	ERP password: HEadmin1
+
+
+Fonkoze:
+=======
+
+	Teamviewer: 673574695
+	password: 885jgk
+
+	ERP login: Admin
+	password: admin1
+	
+
+Old days
+=============
+Teamviwer access :::: amit@s3rv3r
+
+Teamviwer GLIS: 192.168.178.200
+ID: 190 305 116
+PW: amit@s3rv3r
+
+Teamviwer RWANDA: 192.168.178.201
+ID: 197 586 950
+PW: amit@s3rv3r
+
+Teamviwer BURUNDI: 192.168.178.202
+ID: 197 585 753
+PW: amit@s3rv3r
+
+Teamviwer HERDC: 192.168.178.203
+ID: 197 597 856
+PW: amit@s3rv3r
+
+
+Teamviewer UGANDA: 
+ID: 340 517 366
+PW: 9627yc (but i think amit@s3rv3r should also work)
+
+
+
+for localhost/erp
+-------------------
+username :: Annuarite
+password :: Annuarite
+
+
+'isset($data->supplier->cm_orgname)?$data->supplier->cm_orgname:""'
