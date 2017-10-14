@@ -1,0 +1,21 @@
+/* CSS Document */
+.checkbox, .radio {
+	width: 19px;
+	height: 20px;
+	background: url(../images/checkbox.png) center top no-repeat;
+	display: block;
+	float: left;
+	margin:-2px 5px 0 0;
+}
+.radio {
+	background: url(../images/radio.png) no-repeat;
+}
+.select {
+	background: url("../images/select.png") no-repeat scroll right center transparent;
+    color: #000000;
+    font-size: 12px;
+    overflow: hidden;
+    padding-right: 15px;
+    position: absolute;
+}
+
