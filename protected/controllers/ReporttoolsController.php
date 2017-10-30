@@ -1229,7 +1229,7 @@ class ReporttoolsController extends Controller
 
     public function actionLedgerAcGlReports(){
 
-        #exit("LedgerAcGlReports");
+
         $this->pageTitle = 'Ledger Balance';
 
         $pAccountTile = $_POST['Chartofaccounts']['am_description'];
@@ -1237,39 +1237,27 @@ class ReporttoolsController extends Controller
         $pFromDate = $_POST['from_date'];
         $pToDate = $_POST['to_date'];
 
+
         if(isset($_POST['topdf']))
         {
-            /*$re = new JasperReport('Itabps/Reports/ac_gl_account',
+            $re = new JasperReport('Itabps/Reports/am_acglrpt',
                 JasperReport::FORMAT_PDF, array(
-                    'pAccountTile' => $pAccountTile,
+                    'pCoreAcc' => $pAccountTile,
                     'pBranch' => $pBranch,
                     'pFromDate' => $pFromDate,
                     'pToDate'=>$pToDate,
                 )
             );
 
-            $res= $re->exec();
-            echo $re->reportToPDF();*/
-
-            /* Pdf Report */
-            $re = new JasperReport('/entsol/Reports/AcAccounts',
-                JasperReport::FORMAT_PDF, array(
-                    'pAccountTile' => $pAccountTile,
-                    'pBranch' => $pBranch,
-                    'pFromDate' => $pFromDate,
-                    'pToDate'=>$pToDate,
-                )
-            );
             $re->exec();
-            echo $re->reportToPDF(); //All pages
+            echo $re->reportToPDF();
 
-            //AllAccounts;
-            exit();
+
         }else{
 
-            $re = new JasperReport('/Itabps/Reports/ac_gl_account',
+            $re = new JasperReport('/Itabps/Reports/am_acglrpt',
                 JasperReport::FORMAT_XLS, array(
-                    'pAccountTile' => $pAccountTile,
+                    'pCoreAcc' => $pAccountTile,
                     'pBranch' => $pBranch,
                     'pFromDate' => $pFromDate,
                     'pToDate'=>$pToDate,

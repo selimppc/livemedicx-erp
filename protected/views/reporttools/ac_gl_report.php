@@ -42,7 +42,7 @@ include('header.php');
 	  </tr>
 	  <tr>
 
-		<td> <?php echo CHtml::activeDropDownList($coa, 'am_description', CHtml::listData(Chartofaccounts::model()->findAll(array('order' => 'am_description ASC')), 'am_description', 'am_description'), array('empty'=>'- Select Chart of A/C -')); ?> </td>
+		<td> <?php echo CHtml::activeDropDownList($coa, 'am_description', CHtml::listData(Chartofaccounts::model()->findAllByAttributes(array('am_analyticalcode' => 'Cash')), 'am_description', 'am_description'), array('empty'=>'- Select Chart of A/C -')); ?> </td>
 
 	  	<td> <?php echo CHtml::activeDropDownList($model, 'cm_branch', CHtml::listData(Branchmaster::model()->findAll(array('order'=>'cm_branch ASC')), 'cm_branch', 'cm_description'), array('empty'=>'- Select Branch -')); ?> </td>
 	  	<td>
