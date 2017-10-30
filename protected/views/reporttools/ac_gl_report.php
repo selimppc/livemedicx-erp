@@ -31,7 +31,7 @@ include('header.php');
 
 <div style="clear: both;"></div>
 
-<?php echo CHtml::beginForm($this->createUrl('/reporttools/LedgerAcGlReports'), 'POST', array('target'=>'_blank'))?>
+<?php echo CHtml::beginForm($this->createUrl('/reporttools/GlAcBalance'), 'POST', array('target'=>'_blank'))?>
 
 <table style="text-align: left; ">
 	  <tr>

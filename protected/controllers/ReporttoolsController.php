@@ -41,8 +41,7 @@ class ReporttoolsController extends Controller
                     'DeliveryOrderChallan', 'DeliveryOrderChallans', 'ProductList', 'ProductListReports',
                     'CustomerLedger', 'CustomerLedgerReport','CustomerLedgerSales', 'CustomerLedgerSalesReport',
                     'DirectSales', 'DirectSale', 'Adjustment', 'Adjustments', 'StockBalance', 'StockBalances',
-                    'StockBalanceAfterAd', 'StockBalanceAfterAds', 'testReport', 'ExpiredProductList', 'ExpiredProductLists', 'AcGlReports',
-                    'LedgerAcGlReports'
+                    'StockBalanceAfterAd', 'StockBalanceAfterAds', 'testReport', 'ExpiredProductList', 'ExpiredProductLists', 'AcGlReports','GlAcBalance','LedgerAcGlReports'
                 ),
                 'users'=>array('@'),
             ),
@@ -1227,45 +1226,43 @@ class ReporttoolsController extends Controller
         ));
     }
 
-    public function actionLedgerAcGlReports(){
 
+    //GL AC REPORT
+    public function actionGlAcBalance(){
 
-        $this->pageTitle = 'Ledger Balance';
+        $this->pageTitle = 'AC - Ledger Balance';
 
         $pAccountTile = $_POST['Chartofaccounts']['am_description'];
         $pBranch = $_POST['Branchmaster']['cm_branch'];
         $pFromDate = $_POST['from_date'];
         $pToDate = $_POST['to_date'];
 
+        $parameters = [
+            'pCoreAcc' => $pAccountTile,
+            'pBranch' => $pBranch,
+            'pFromDate' => $pFromDate,
+            'pToDate'=>$pToDate,
+        ];
+
 
         if(isset($_POST['topdf']))
         {
-            $re = new JasperReport('Itabps/Reports/am_acglrpt',
-                JasperReport::FORMAT_PDF, array(
-                    'pCoreAcc' => $pAccountTile,
-                    'pBranch' => $pBranch,
-                    'pFromDate' => $pFromDate,
-                    'pToDate'=>$pToDate,
-                )
+            $re = new JasperReport('/Itabps/Reports/am_acglrpt',
+                JasperReport::FORMAT_PDF, $parameters
             );
 
             $re->exec();
             echo $re->reportToPDF();
 
-
         }else{
 
             $re = new JasperReport('/Itabps/Reports/am_acglrpt',
-                JasperReport::FORMAT_XLS, array(
-                    'pCoreAcc' => $pAccountTile,
-                    'pBranch' => $pBranch,
-                    'pFromDate' => $pFromDate,
-                    'pToDate'=>$pToDate,
-                )
+                JasperReport::FORMAT_XLS, $parameters
             );
 
             $re->exec();
             echo $re->reportToXLS();
+
         }
 
 

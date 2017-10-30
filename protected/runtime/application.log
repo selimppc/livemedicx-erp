@@ -9610,3 +9610,80 @@ Stack trace:
 #5 {main}
 REQUEST_URI=/index.php/reporttools/underscore-min.map
 ---
+2017/10/30 23:51:09 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "underscore-min.map". in /Users/selimreza/Sites/erp/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Users/selimreza/Sites/erp/yii/framework/web/CController.php(270): CController->missingAction('underscore-min....')
+#1 /Users/selimreza/Sites/erp/yii/framework/web/CWebApplication.php(282): CController->run('underscore-min....')
+#2 /Users/selimreza/Sites/erp/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('reporttools/und...')
+#3 /Users/selimreza/Sites/erp/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Users/selimreza/Sites/erp/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/reporttools/underscore-min.map
+---
+2017/10/30 23:51:09 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "jquery.timepicker.min.js.map". in /Users/selimreza/Sites/erp/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Users/selimreza/Sites/erp/yii/framework/web/CController.php(270): CController->missingAction('jquery.timepick...')
+#1 /Users/selimreza/Sites/erp/yii/framework/web/CWebApplication.php(282): CController->run('jquery.timepick...')
+#2 /Users/selimreza/Sites/erp/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('reporttools/jqu...')
+#3 /Users/selimreza/Sites/erp/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Users/selimreza/Sites/erp/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/reporttools/jquery.timepicker.min.js.map
+---
+2017/10/30 23:51:43 [error] [exception.Exception] Exception: Limit Exceeded time, please try again  in /Users/selimreza/Sites/erp/protected/extensions/YiiJasper/JasperReport.php:365
+Stack trace:
+#0 /Users/selimreza/Sites/erp/protected/extensions/YiiJasper/JasperReport.php(432): JasperReport->reportOutput('pdf', NULL)
+#1 /Users/selimreza/Sites/erp/protected/controllers/ReporttoolsController.php(1253): JasperReport->reportToPDF()
+#2 /Users/selimreza/Sites/erp/yii/framework/web/actions/CInlineAction.php(49): ReporttoolsController->actionLedgerAcGlReports()
+#3 /Users/selimreza/Sites/erp/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /Users/selimreza/Sites/erp/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 /Users/selimreza/Sites/erp/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /Users/selimreza/Sites/erp/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 /Users/selimreza/Sites/erp/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 /Users/selimreza/Sites/erp/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 /Users/selimreza/Sites/erp/yii/framework/web/CController.php(291): CFilterChain->run()
+#10 /Users/selimreza/Sites/erp/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /Users/selimreza/Sites/erp/yii/framework/web/CWebApplication.php(282): CController->run('LedgerAcGlRepor...')
+#12 /Users/selimreza/Sites/erp/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('reporttools/Led...')
+#13 /Users/selimreza/Sites/erp/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#14 /Users/selimreza/Sites/erp/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/index.php/reporttools/LedgerAcGlReports
+HTTP_REFERER=http://erp.dev:8080/index.php/reporttools/AcGlReports
+---
+2017/10/30 23:54:58 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "underscore-min.map". in /Users/selimreza/Sites/erp/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Users/selimreza/Sites/erp/yii/framework/web/CController.php(270): CController->missingAction('underscore-min....')
+#1 /Users/selimreza/Sites/erp/yii/framework/web/CWebApplication.php(282): CController->run('underscore-min....')
+#2 /Users/selimreza/Sites/erp/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('reporttools/und...')
+#3 /Users/selimreza/Sites/erp/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Users/selimreza/Sites/erp/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/reporttools/underscore-min.map
+---
+2017/10/30 23:54:58 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "jquery.timepicker.min.js.map". in /Users/selimreza/Sites/erp/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Users/selimreza/Sites/erp/yii/framework/web/CController.php(270): CController->missingAction('jquery.timepick...')
+#1 /Users/selimreza/Sites/erp/yii/framework/web/CWebApplication.php(282): CController->run('jquery.timepick...')
+#2 /Users/selimreza/Sites/erp/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('reporttools/jqu...')
+#3 /Users/selimreza/Sites/erp/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Users/selimreza/Sites/erp/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/reporttools/jquery.timepicker.min.js.map
+---
+2017/10/30 23:56:30 [error] [php] Undefined index: Chartofaccounts (/Users/selimreza/Sites/erp/protected/controllers/ReporttoolsController.php:1280)
+Stack trace:
+#0 /Users/selimreza/Sites/erp/yii/framework/web/filters/CFilterChain.php(133): ReporttoolsController->runAction()
+#1 /Users/selimreza/Sites/erp/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#2 /Users/selimreza/Sites/erp/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#3 /Users/selimreza/Sites/erp/yii/framework/web/filters/CInlineFilter.php(58): ReporttoolsController->filterAccessControl()
+#4 /Users/selimreza/Sites/erp/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#5 /Users/selimreza/Sites/erp/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /Users/selimreza/Sites/erp/yii/framework/web/CController.php(265): ReporttoolsController->runActionWithFilters()
+#7 /Users/selimreza/Sites/erp/yii/framework/web/CWebApplication.php(282): ReporttoolsController->run()
+#8 /Users/selimreza/Sites/erp/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /Users/selimreza/Sites/erp/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /Users/selimreza/Sites/erp/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/reporttools/GlAcBalance
+in /Users/selimreza/Sites/erp/protected/controllers/ReporttoolsController.php (1280)
+in /Users/selimreza/Sites/erp/index.php (13)

@@ -13,9 +13,11 @@ class JasperReport extends CComponent {
     /**
     * @var string La url base del servidor jasper
     */
-    protected $baseUrl = 'http://localhost:8080/jasperserver/';
+    //protected $baseUrl = 'http://localhost:8080/jasperserver/';
 	//protected $baseUrl = 'http://37.230.100.79:8080/jasperserver/';
 	//protected $baseUrl = 'http://45.33.43.28:8080/jasperserver/';
+	protected $baseUrl = 'http://173.255.240.43:8080/jasperserver/';
+
 
     /**
     * @var string Uri para logearse en el servidor jasper
