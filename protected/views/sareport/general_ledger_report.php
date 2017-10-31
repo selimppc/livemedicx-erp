@@ -90,7 +90,8 @@ $this->menu=array(
 		</div>
 		<div id="report_main_div">
 			<div id="report_button">
-				<?php echo CHtml::link('A/C - GL Report',array('sareport/AcGlReports')); ?>
+				<?php //echo CHtml::link('A/C - GL Report',array('sareport/AcGlReports')); ?>
+				<?php echo CHtml::link('A/C - GL Report',array('reporttools/AcGlReports')); ?>
 			</div>
 		</div>
 	</div>

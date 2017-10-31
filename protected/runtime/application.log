@@ -9687,3 +9687,52 @@ Stack trace:
 REQUEST_URI=/index.php/reporttools/GlAcBalance
 in /Users/selimreza/Sites/erp/protected/controllers/ReporttoolsController.php (1280)
 in /Users/selimreza/Sites/erp/index.php (13)
+2017/10/31 00:25:58 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "underscore-min.map". in /Users/selimreza/Sites/erp/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Users/selimreza/Sites/erp/yii/framework/web/CController.php(270): CController->missingAction('underscore-min....')
+#1 /Users/selimreza/Sites/erp/yii/framework/web/CWebApplication.php(282): CController->run('underscore-min....')
+#2 /Users/selimreza/Sites/erp/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('reporttools/und...')
+#3 /Users/selimreza/Sites/erp/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Users/selimreza/Sites/erp/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/reporttools/underscore-min.map
+---
+2017/10/31 00:25:58 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "jquery.timepicker.min.js.map". in /Users/selimreza/Sites/erp/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Users/selimreza/Sites/erp/yii/framework/web/CController.php(270): CController->missingAction('jquery.timepick...')
+#1 /Users/selimreza/Sites/erp/yii/framework/web/CWebApplication.php(282): CController->run('jquery.timepick...')
+#2 /Users/selimreza/Sites/erp/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('reporttools/jqu...')
+#3 /Users/selimreza/Sites/erp/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Users/selimreza/Sites/erp/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/reporttools/jquery.timepicker.min.js.map
+---
+2017/10/31 22:25:07 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "favicon.ico". in /Users/selimreza/Sites/erp/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/selimreza/Sites/erp/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /Users/selimreza/Sites/erp/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Users/selimreza/Sites/erp/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://erp.dev:8080/
+---
+2017/10/31 22:27:19 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "jquery.timepicker.min.js.map". in /Users/selimreza/Sites/erp/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Users/selimreza/Sites/erp/yii/framework/web/CController.php(270): CController->missingAction('jquery.timepick...')
+#1 /Users/selimreza/Sites/erp/yii/framework/web/CWebApplication.php(282): CController->run('jquery.timepick...')
+#2 /Users/selimreza/Sites/erp/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('sareport/jquery...')
+#3 /Users/selimreza/Sites/erp/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Users/selimreza/Sites/erp/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/sareport/jquery.timepicker.min.js.map
+---
+2017/10/31 22:27:19 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "underscore-min.map". in /Users/selimreza/Sites/erp/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Users/selimreza/Sites/erp/yii/framework/web/CController.php(270): CController->missingAction('underscore-min....')
+#1 /Users/selimreza/Sites/erp/yii/framework/web/CWebApplication.php(282): CController->run('underscore-min....')
+#2 /Users/selimreza/Sites/erp/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('sareport/unders...')
+#3 /Users/selimreza/Sites/erp/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Users/selimreza/Sites/erp/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/sareport/underscore-min.map
+---
